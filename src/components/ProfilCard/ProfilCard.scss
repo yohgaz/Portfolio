@@ -1,0 +1,126 @@
+.app__profilecard {
+    border-radius: 1.5rem;
+    overflow-x: clip;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    gap: 1rem;
+    border: var(--white-color);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    margin: 1rem 1.5rem 3rem 1.5rem;
+    width: 20%;
+    height: 54%;
+
+    @media screen and ( max-width: 1200px) {
+        display:none;
+    }
+
+    .app__profileimages {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .app__profileimages>img:nth-of-type(1){
+        width: 100%;
+    }
+
+    .app__profileimages>img:nth-of-type(2){
+        width: 9rem;
+        border-radius: 50%;
+        position: absolute;
+        bottom: -3.5rem;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+    .app__profilename {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2rem;
+        gap: 10px; 
+        
+        span {
+        font-size: 1.5rem;
+        font-weight: bold;
+        padding: 1rem;
+        }
+
+        p {
+            font-size: 1rem;
+            font-weight: 200;
+        }
+    }
+
+    .app_socials {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+
+        hr {
+            width: 85%;
+            border: 1px solid #cfcdcd
+        }
+
+        .app__links{
+            display: flex;
+            flex-direction: row;
+            width: 70%;
+            justify-content: space-around;
+            align-items: center;
+
+                a {
+                    color: var(--black-color);
+                    font-size: 2.6rem;
+                }
+
+                a:hover {
+                    color: var(--third-color);
+                }
+
+                .app__vl {
+                    height: 2.5rem;
+                    border: 1px solid #cfcdcd;
+                }
+        }
+
+        .app__links-btn {
+            display: flex;
+            flex-direction: row;
+            width: 70%;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .app__cardbtn {
+            position: static;
+            bottom: 1rem;
+            width: max-content;
+            border-radius: 20px;
+            border: solid 1px var(--third-color);
+            background: transparent;
+            color: var(--black-color);
+            font-size: 1.5rem;
+            font-weight: bold;
+            padding: 10px 15px 10px 15px;
+            cursor: pointer;
+
+            a {
+                color: var(--black-color);
+                text-decoration: none;
+            }
+        }
+
+        .app__cardbtn:hover, a:hover {
+        transition: all 500ms ease-in;
+        background: var(--third-color);
+        box-shadow: 0px 5px 20px  rgba(220, 20, 60, 0.7);
+        color: var(--white-color);
+        }
+    }
+}
